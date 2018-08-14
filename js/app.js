@@ -15,7 +15,7 @@ $(document).ready(function() {
 var myCenter=new google.maps.LatLng(37.7892444, -122.3979676);
 var marker;
 
-function initialize() {
+function initMap() {
 var mapProp = {
   center:myCenter,
   zoom:16,
@@ -32,7 +32,7 @@ var marker=new google.maps.Marker({
 marker.setMap(map);
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, 'load', initMap);
 
 
 
