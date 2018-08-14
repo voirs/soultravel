@@ -12,28 +12,15 @@ $(document).ready(function() {
 });
 
 
-var myCenter=new google.maps.LatLng(37.7892444, -122.3979676);
-var marker;
-
 function initMap() {
-var mapProp = {
-  center:myCenter,
-  zoom:16,
-  scrollwheel:false,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-
-var map=new google.maps.Map(document.getElementById("map"),mapProp);
-
-var marker=new google.maps.Marker({
-  position:myCenter
-  });
-
-marker.setMap(map);
+  // The location of Uluru
+  var uluru = {lat: 37.7892444, lng: -122.3979676};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 16, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
 }
-
-google.maps.event.addDomListener(window, 'load', initMap);
-
 
 
     /* Nav Scroll Effect */
