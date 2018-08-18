@@ -273,7 +273,7 @@ h1 {
  }
 
 @media (min-width: 320px) and (max-width: 480px) {
-.down { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1;} .up { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }
+.down { -webkit-box-ordinal-group: 2; -ms-flex-order: 2; order: 1;} .up { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }
 .about p { font-size: 0.8rem; padding: 1rem 3rem; text-align: center;}
 }
 
@@ -291,16 +291,13 @@ h1 {
 }
 
 .photo img {
-  opacity: 0.6;
+  opacity: 0.9;
   width: 100%;
   height: 40vh;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(210,163,11,0.8)), to(rgba(222,20,33,0.5)));
-  background: -webkit-linear-gradient(left top, rgba(210,163,11,0.8), rgba(222,20,33,0.5));
-  background: -o-linear-gradient(left top, rgba(210,163,11,0.8), rgba(222,20,33,0.5));
-  background: linear-gradient(to right bottom, rgba(210,163,11,0.8), rgba(222,20,33,0.5));  
+  background: transparent;
   -webkit-transform: scale(1.15);
-  -ms-transform: scale(1.15);
-      transform: scale(1.15);
+  -ms-transform: scale(1.25);
+      transform: scale(1.20);
   -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, -webkit-transform 0.5s;
   -o-transition: transform 0.5s, opacity 0.5s;
@@ -317,14 +314,14 @@ h1 {
  }
 
 @media (min-width: 320px) and (max-width: 480px) {
-.photo img {height: 15vh;}
+.photo img {height: 18vh;}
 }
 
 .photo img:hover {
     opacity: 0.8;
     -webkit-transform: scale(1.08);
     -ms-transform: scale(1.08);
-        transform: scale(1.08);
+        transform: scale(1.25);
 }
 
 
@@ -505,7 +502,7 @@ h1 {
   display: inline-block;
   font-size: 2rem;
   font-weight: 300;
-  padding: 1rem 2rem;
+  padding: 0.6rem 0.6rem;
   color: #fff;
   text-transform: uppercase;
   background-size: 200%;
