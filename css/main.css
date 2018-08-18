@@ -89,14 +89,10 @@ i {
 *****************************************/
 header {
     position: relative;
-    background-image:-webkit-gradient(linear, left top, right bottom, from(rgba(226, 183, 51, 0.7)), to(rgba(240, 80,53, 0.4))), url(../img/bg.jpg);
-    background-image:-webkit-linear-gradient(left top, rgba(226, 183, 51, 0.7), rgba(240, 80,53, 0.4)), url(../img/bg.jpg);
-    background-image:-o-linear-gradient(left top, rgba(226, 183, 51, 0.7), rgba(240, 80,53, 0.4)), url(../img/bg.jpg);    
-    background-image:linear-gradient(to right bottom, rgba(226, 183, 51, 0.7), rgba(240, 80,53, 0.4)), url(../img/bg.jpg);    
+    background-image:linear-gradient(to right bottom, rgba(222, 119, 63, 1.0), rgba(245, 80,53, 0.5)), url(../img/bg.jpg);    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -104,8 +100,8 @@ header {
 }
   @media (min-width: 320px) and (max-width: 480px){
     header {
-      background-image: linear-gradient(to right bottom, rgba(226, 183, 51, 0.8), rgba(240, 80,53, 0.4)), url(../img/bgsmall.jpg);} 
-  }
+      background-image: linear-gradient(to right bottom, rgba(222, 119, 63, 1.0), rgba(245, 80,53, 0.5)), url(../img/bgsmall.jpg);
+  background-size: cover;} }
 
 h1 {
     color: #FFF;
@@ -292,6 +288,7 @@ h1 {
   width: 100%;
   margin: 0;
   overflow: hidden;     
+  background: linear-gradient(to right bottom, rgba(236, 119, 63, 4.1), rgba(256, 80,53, 5.5));
 }
 
 .photo img {
