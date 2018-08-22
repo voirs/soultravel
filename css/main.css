@@ -100,8 +100,8 @@ header {
 }
   @media (min-width: 320px) and (max-width: 480px){
     header {
-      background-image: linear-gradient(to right bottom, rgba(222, 119, 63, 1.0), rgba(245, 80,53, 0.5)), url(../img/bgsmall.jpg);
-  background-size: cover;} }
+    background-image: linear-gradient(to right bottom, rgba(222, 119, 63, 1.0), rgba(245, 80,53, 0.5)), url(../img/bgsmall.jpg);
+    background-size: cover;} }
 
 h1 {
     color: #FFF;
@@ -306,16 +306,23 @@ h1 {
   transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
+@media (min-width: 1281px) {
+ .photo img {max-height: 40vh;}  
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+ .photo img {max-height: 35vh;}  
+}
 @media (min-width: 768px) and (max-width: 1024px) {
-.photo img {height: 30vh;}
+.photo img {max-height: 30vh;}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-  .photo img {height: 20vh;}
+  .photo img {max-height: 20vh;}
  }
 
 @media (min-width: 320px) and (max-width: 480px) {
-.photo img {height: 18vh;}
+.photo img {max-height: 16vh; height: 14vh;}
 }
 
 .photo img:hover {
@@ -606,6 +613,10 @@ h1 {
   border-bottom: 2px solid #F8C8C5;
 }
 
+@media (min-width: 1080px) {
+.cite:first-child {
+    margin-left: 2rem;}
+}
 
 blockquote {
     padding: 2%;
