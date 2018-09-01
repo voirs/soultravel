@@ -279,16 +279,23 @@ h1 {
   padding: 0 6rem;
 }
 
+@media (min-width: 1920px) {
+  .about p { font-size: 1.5rem; padding: 1.3rem 8rem;}
+}
+@media (min-width: 1281px) {
+  .about p { font-size: 1.5rem; padding: 1.3rem 7rem;}  
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .about p { font-size: 1.5rem; padding: 1.3rem 6rem;}
+ }
 @media (min-width: 768px) and (max-width: 1024px) {
  .down { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1;} .up { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }
 .about p { font-size: 1.2rem; padding: 1rem 4rem;}
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
  .down { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1;} .up { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }
  .about p { font-size: 1rem; padding: 1rem 3rem; text-align: center;}
  }
-
 @media (min-width: 320px) and (max-width: 480px) {
 .down { -webkit-box-ordinal-group: 2; -ms-flex-order: 2; order: 1;} .up { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }
 .about p { font-size: 0.8rem; padding: 1rem 3rem; text-align: center;}
