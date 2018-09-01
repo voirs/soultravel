@@ -114,7 +114,6 @@ h1 {
 /* ////////////////// HEADLINE ////////////////*/
 
 .headline {
-    margin: 15% auto;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
@@ -122,18 +121,36 @@ h1 {
 
 @media (min-width: 320px) and (max-width: 480px) {
    .headline{
-    margin: 45% auto;
+    margin: 50% auto;
     width: 90%;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
    .headline{
     margin: 35% auto;
   }
 }
-
+@media (min-width: 768px) and (max-width: 1024px) {
+  .headline{
+    margin: 30% auto;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .headline{
+    margin: 25% auto;
+  }  
+}
+@media (min-width: 1281px) {
+  .headline{
+    margin: 15% auto;
+  }  
+}
+@media (min-width: 1920px) {
+  .headline{
+    margin: 15% auto;
+  }  
+}
 .adventure {
     text-transform: uppercase;
     color: #FFF; 
