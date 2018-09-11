@@ -89,7 +89,7 @@ i {
 *****************************************/
 header {
     position: relative;
-    background-image:linear-gradient(to right bottom, rgba(222, 119, 63, 0.1), rgba(245, 80,53, 0.5)), url(../img/bg.jpg);    
+    background-image:linear-gradient(to right bottom, rgba(222, 119, 63, 0.2), rgba(245, 80,53, 0.5)), url(../img/bg.jpg);    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
