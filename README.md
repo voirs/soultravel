@@ -1,4 +1,7 @@
 # Soultravel
+Design and development from zero of a travel agency website.
 
-# See it live
-[Click me](https://voirs.github.io/soultravel/)
+![](img1.png)
+
+# View live 
+[Here](https://voirs.github.io/soultravel)
