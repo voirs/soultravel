@@ -138,7 +138,7 @@ h1 {
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
   .headline{
-    margin: 25% auto;
+    margin: 20% auto;
   }  
 }
 @media (min-width: 1281px) and (max-width: 1700px){
@@ -170,7 +170,7 @@ h1 {
 
 .adventure:hover {
     background-color: #FFF;
-    color:  #FE7676;
+    color:  #e25656;
     border: 1px solid #FE7676;
 }
 
@@ -528,7 +528,7 @@ h1 {
 }
 
 .nav-item {
-  margin: 1rem; }
+  margin: 2rem; }
 
 .nav-link:link, .nav-link:visited {
   display: inline-block;
