@@ -18,7 +18,8 @@ body {
 	font-weight: 300;
 	line-height: 1.8;
 	color: #615F6E;
-	overflow-x: hidden
+	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 ul {
 	list-style: none
