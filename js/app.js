@@ -38,25 +38,25 @@ $(document).ready(function() {
      new WOW().init();
     
     /* Animations On Scroll */
-    $('.js--fadeIn').waypoint(function(direction) {
+    $('.js--fadeIn').(function(direction) {
         $('.js--fadeIn').addClass('animated fadeIn');
     }, {
         offset: '50%;'
     });
     
-    $('.js--slideInLeft').waypoint(function(direction) {
+    $('.js--slideInLeft').(function(direction) {
         $('.js--slideInLeft').addClass('animated slideInLeft');
     }, {
         offset: '50%;'
     });
     
-    $('.js--slideInRight').waypoint(function(direction) {
+    $('.js--slideInRight').(function(direction) {
         $('.js--slideInRight').addClass('animated slideInRight');
     }, {
         offset: '50%;'
     });
     
-    $('.js--pulse').waypoint(function(direction) {
+    $('.js--pulse').(function(direction) {
         $('.js--pulse').addClass('animated pulse');
     }, {
         offset: '50%;'
