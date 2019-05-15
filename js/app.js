@@ -1,4 +1,9 @@
-   var map;
+   
+var date = new Date().getFullYear();
+
+document.getElementById("year").innerHTML = date;
+
+var map;
     $(document).ready(function(){
       map = new GMaps({
         el: '#map',
