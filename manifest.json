@@ -1,13 +1,14 @@
 {
-  "name": "Your Great Site",
-  "short_name": "Site ",
-  "description": "Learn how to create and share something or other.",
-  "start_url": "/?homescreen=1",
-  "background_color": "#000000",
+  "name": "Soultravel",
+  "short_name": "Soultravel",
+  "lang": "en-US",
+  "start_url": "/index.html",
+  "display": "standalone",
   "theme_color": "#FE7676",
-  "icons": [{
-    "src": "icon-256.png",
-    "sizes": "256x256",
-    "type": "image/png"
-  }]
-}
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]

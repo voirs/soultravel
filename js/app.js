@@ -1,9 +1,9 @@
    
-var date = new Date().getFullYear();
+let date = new Date().getFullYear();
 
 document.getElementById("year").innerHTML = date;
 
-var map;
+let map;
     $(document).ready(function(){
       map = new GMaps({
         el: '#map',
@@ -25,7 +25,7 @@ var map;
 $(document).ready(function() {
   
   $(window).scroll(function () {
-      console.log($(window).scrollTop())
+     ($(window).scrollTop())
     if ($(window).scrollTop() > 280) {
       $('.navbar').addClass('navbar-fixed');
     }
@@ -38,27 +38,27 @@ $(document).ready(function() {
      new WOW().init();
     
     /* Animations On Scroll */
-    $('.js--fadeIn').(function(direction) {
-        $('.js--fadeIn').addClass('animated fadeIn');
-    }, {
-        offset: '50%;'
-    });
-    
-    $('.js--slideInLeft').(function(direction) {
-        $('.js--slideInLeft').addClass('animated slideInLeft');
-    }, {
-        offset: '50%;'
-    });
-    
-    $('.js--slideInRight').(function(direction) {
-        $('.js--slideInRight').addClass('animated slideInRight');
-    }, {
-        offset: '50%;'
-    });
-    
-    $('.js--pulse').(function(direction) {
-        $('.js--pulse').addClass('animated pulse');
-    }, {
-        offset: '50%;'
-    });
+     $(function() {
+          $('.js--fadeIn').addClass('animated fadeIn');
+      }, {
+          offset: '50%;'
+      });
+      
+     $(function() {
+          $('.js--slideInLeft').addClass('animated slideInLeft');
+      }, {
+          offset: '50%;'
+      });
+      
+     $(function() {
+          $('.js--slideInRight').addClass('animated slideInRight');
+      }, {
+          offset: '50%;'
+      });
+      
+      $(function() {
+          $('.js--pulse').addClass('animated pulse');
+      }, {
+          offset: '50%;'
+      });
 
