@@ -1,6 +1,7 @@
 var CACHE_NAME = 'soultravel-cache';
 var urlsToCache = [
   '/',
+  '/index.html'
   '/main.css',
   '/app.js'
 ];
