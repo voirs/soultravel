@@ -1,8 +1,8 @@
 var CACHE_NAME = 'soultravel-cache';
 var urlsToCache = [
   '/',
-  '/css/main.css',
-  '/js/app.js'
+  '/main.css',
+  '/app.js'
 ];
 
 self.addEventListener('install', function(event) {
