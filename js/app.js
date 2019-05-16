@@ -1,7 +1,3 @@
-  if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js');
-}
-
 /* dynamic year */ 
 let date = new Date().getFullYear();
 
