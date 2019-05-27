@@ -1,10 +1,12 @@
+if ('serviceWorker' in navigator) {navigator.serviceWorker.register('/sw.js');}
+
 /* dynamic year */ 
 let date = new Date().getFullYear();
 
 document.getElementById("year").innerHTML = date;
 
 /* gmaps */
-let map;
+var map;
     $(document).ready(function(){
       map = new GMaps({
         el: '#map',

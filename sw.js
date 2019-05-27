@@ -1,51 +1,55 @@
-var CACHE_NAME = 'soultravel-cache';
-var urlsToCache = [
-  '/',
-  '/index.html',
-  '/main.css',
-  '/app.js'
-];
+// const staticCacheName = 'soultravel-cache-v1';
+// const dynamicCache = 'soultravel-dynamic-cache-v1';
+// const assets = [
+//   '/',
+//   '/index.html',
+//   '/css/main.css',
+//   '/js/app.js',
+//   '/css/normalize.css',
+//   '/css/animate.css',
+//   '/img/bg.webp',
+//   '/img/bg.jpg',
+//   '/img/Tropical.mp4',
+//   '/img/Tropical.webm',
+//   'https://fonts.googleapis.com/css?family=Rubik:300,400,500',
+//   'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js',
+//   'https://unpkg.com/ionicons@4.2.4/dist/ionicons.js',
+//   'https://maps.google.com/maps/api/js?key=AIzaSyBRo0JIDlE4GOlbO9j8t18EnRDqPEnfKyQ'
+// ];
 
-self.addEventListener('install', function(event) {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function(cache) {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache);
-      })
-  );
-});
+// self.addEventListener('install', evt => {
+//   console.log("Service worker has been installed");
+//   evt.waitUntil(
+//     caches.open(staticCacheName).then(cache => {
+//       console.log('caching shell assets');
+//       cache.addAll(assets);
+//     })
+//   );
+// });
 
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request)
-      .then(function(response) {
-        // Cache hit - return response
-        if (response) {
-          return response;
-        }
+// self.addEventListener('activate', evt => {
+//   console.log("Serviceworker has been activated");
+//   evt.waitUntil(
+//     caches.keys().then(keys => {
+//       console.log(keys);
+//       return Promise.all(keys
+//        .filter(key => key !== staticCacheName)
+//        .map(key => caches.delete(key)) 
+//         )
+//     })
+//   );
+// });
 
-        return fetch(event.request).then(
-          function(response) {
-            // Check if we received a valid response
-            if(!response || response.status !== 200 || response.type !== 'basic') {
-              return response;
-            }
-
-            // IMPORTANT: Clone the response. A response is a stream
-            // and because we want the browser to consume the response
-            // as well as the cache consuming the response, we need
-            // to clone it so we have two streams.
-            var responseToCache = response.clone();
-
-            caches.open(CACHE_NAME)
-              .then(function(cache) {
-                cache.put(event.request, responseToCache);
-              });
-
-            return response;
-          }
-        );
-      })
-    );
-});
+// self.addEventListener('fetch', evt => {
+//   console.log("fetch event", evt);
+//   evt.respondWith(
+//     caches.match(evt.request).then(cacheRes => {
+//       return cacheRes || fetch(evt.request).then(fetchRes => {
+//         return caches.open(dynamicCache).then (cache => {          
+//         cache.put(evt.request.url, fetchRes.clone());        
+//         return fetchRes;
+//         })
+//       });
+//     })
+//   );
+// });
