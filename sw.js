@@ -10,9 +10,9 @@ const assets = [
   '/img/bg.jpg',
   '/img/Tropical.mp4',
   '/img/Tropical.webm',
-  'https://fonts.googleapis.com/css?family=Rubik:300,400,500',
-  'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js',
-  'https://unpkg.com/ionicons@4.2.4/dist/ionicons.js',
+  // 'https://fonts.googleapis.com/css?family=Rubik:300,400,500',
+  // 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js',
+  // 'https://unpkg.com/ionicons@4.2.4/dist/ionicons.js',
 ];
 
 self.addEventListener('install', evt => {
