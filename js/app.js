@@ -1,4 +1,4 @@
-if ('serviceWorker' in navigator) {navigator.serviceWorker.register('/sw.js');}
+if ('serviceWorker' in navigator) {navigator.serviceWorker.register('/js/sw.js');}
 
 /* dynamic year */ 
 let date = new Date().getFullYear();

@@ -14,7 +14,6 @@ const assets = [
   'https://fonts.googleapis.com/css?family=Rubik:300,400,500',
   'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js',
   'https://unpkg.com/ionicons@4.2.4/dist/ionicons.js',
-  'https://maps.google.com/maps/api/js?key=AIzaSyBRo0JIDlE4GOlbO9j8t18EnRDqPEnfKyQ'
 ];
 
 self.addEventListener('install', evt => {
