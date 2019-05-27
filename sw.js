@@ -1,7 +1,6 @@
 const staticCacheName = 'soultravel-cache-v1';
 const dynamicCache = 'soultravel-dynamic-cache-v1';
 const assets = [
-  '/',
   '/index.html',
   '/css/main.css',
   '/js/app.js',
