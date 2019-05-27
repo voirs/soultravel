@@ -3,13 +3,7 @@ const dynamicCache = 'soultravel-dynamic-cache-v1';
 const assets = [
   '/index.html',
   '/css/main.css',
-  '/js/app.js',
-  '/css/normalize.css',
-  '/css/animate.css',
-  '/img/bg.webp',
-  '/img/bg.jpg',
-  '/img/Tropical.mp4',
-  '/img/Tropical.webm'
+  '/js/app.js'
   // 'https://fonts.googleapis.com/css?family=Rubik:300,400,500',
   // 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js',
   // 'https://unpkg.com/ionicons@4.2.4/dist/ionicons.js',
