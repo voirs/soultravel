@@ -61,7 +61,7 @@
 </div>
 <nav class="navbar">
 	<div class="navfixed">
-		<a href="#"><img src="img/waxing_cresent_dark.svg" alt="Soultravel logo" class="sticky-logo" /></a>
+		<a href="#"><img src="img/waxing_cresent_dark.svg" alt="Soultravel moon logo dark" class="sticky-logo" /></a>
 		<ul class="main-nav">
 			<li><a href="#about">About</a></li>
 			<li><a href="#gallery">Gallery</a></li>
@@ -72,7 +72,7 @@
 	</div>
 </nav>
 <div class="logo">
-	<a href="#"><img src="img/waxing_cresent_light.svg" alt="Soultravel logo" /></a>
+	<a href="#"><img src="img/waxing_cresent_light.svg" alt="Soultravel moon logo light" /></a>
 </div>
 <div class="headline animated fadeInUp">
 	<h1>Explore New Destinations</h1>
@@ -81,6 +81,7 @@
 <div class="find-out-more">
 	<a href="#about" class="scroll">
 		<ion-icon name="ios-arrow-down"></ion-icon>
+		<span class="screen-reader-only">Go to main content</span>
 	</a>
 </div>
 </header>
@@ -127,7 +128,8 @@
 	</div>
 	</section>
 
-<section class="gallery" id="gallery">
+<section class="gallery" id="gallery">	
+		<h2 class="animated fadeInUp">Gallery</h2>
 	<div class="col photoContainer">
 		<figure class="photo">
 			<img src="img/1.jpg" alt="Beach">
@@ -216,7 +218,7 @@
 		<h2 class="animated fadeInUp">Pricing</h2>
 		<p class="phrase wow animated fadeInUp">One Step Away From Your Dream Trip</p>
 	<div class="priceContainer">
-		<div class="panel wow animated fadeInLeft">
+		<div class="panel wow animated fadeIn">
 			<h3>Starter tour</h3>
 			<p class="priceValue">$29</p><button class="button white-bg">FEATURES</button>
 			<ul class="featured-ul">
@@ -226,7 +228,7 @@
 				<li><ion-icon name="checkmark"></ion-icon> 24/7 Support Team</li>
 			</ul><hr><button class="button action-button">Buy Now</button>
 		</div>
-		<div class="panel panel-colored wow animated zoomIn">
+		<div class="panel panel-colored wow animated fadeIn">
 			<h3>Luxury tour</h3>
 			<p class="priceValue">$99</p><button class="button sunset-bg">FEATURES</button>
 			<ul class="featured-ul">
@@ -237,7 +239,7 @@
 				<li><ion-icon name="checkmark"></ion-icon> 24/7 Support Team</li>
 			</ul><button class="button action-button">Buy Now</button>
 		</div>
-		<div class="panel wow animated fadeInRight">
+		<div class="panel wow animated fadeIn">
 			<h3>Premium tour</h3>
 			<p class="priceValue">$59</p><button class="button white-bg">FEATURES</button>
 			<ul class="featured-ul">
@@ -262,10 +264,10 @@
 		<div class="col mapContainer">
 		<form>
 			<div class="inputs">
-				<label>Name</label><input name="firstName" placeholder="Name" type="text" id="name"> <label>Email</label><input name="email" placeholder="your@email.com" type="email" id="email"> <label>Subject</label><input name="subject" placeholder="Subject" type="text" id="subject">
+				<label for="name">Name</label><input name="firstName" placeholder="Name" type="text" id="name"> <label for="email">Email</label><input name="email" placeholder="your@email.com" type="email" id="email"> <label for="subject">Subject</label><input name="subject" placeholder="Subject" type="text" id="subject">
 			</div>
 			<div class="messageContent">
-				<label>Message</label><textarea rows="4" name="messageContent" placeholder="Message" id="message-box"></textarea>
+				<label for="message">Message</label><textarea rows="4" name="messageContent" placeholder="Message" id="message-box"></textarea>
 			</div>
 			<button class="button action-button">Send</button>
 		</form>	
@@ -282,18 +284,18 @@
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 		<ul>
-			<li><a href="">Privacy Policy</a></li>
-			<li><a href="">Terms and Conditions</a></li>
-			<li><a href="">Payment Methods</a></li>
-			<li><a href="">Assurance Policy</a></li>
+			<li><a href="#privacy-policy">Privacy Policy</a></li>
+			<li><a href="#terms-and-conditions">Terms and Conditions</a></li>
+			<li><a href="#payment-methods">Payment Methods</a></li>
+			<li><a href="#assurance-policy">Assurance Policy</a></li>
 		</ul>
 	</div>
 	<div class="social">
 		<ul class="icons">
-			<li><a href="" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
-			<li><a href="" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
-			<li><a href="" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-			<li><a href="" target="_blank"><ion-icon name="logo-rss"></ion-icon></a></li> 
+			<li><a href="#facebook" target="_blank"><ion-icon name="logo-facebook"></ion-icon><span class="screen-reader-only">Facebook link (opens in a new window)</span></a></li>
+			<li><a href="#twitter" target="_blank"><ion-icon name="logo-twitter"></ion-icon><span class="screen-reader-only">Twitter link (opens in a new window)</span></a></li>
+			<li><a href="#instagram" target="_blank"><ion-icon name="logo-instagram"></ion-icon><span class="screen-reader-only">Instagram link (opens in a new window)</span></a></li>
+			<li><a href="#rss" target="_blank"><ion-icon name="logo-rss"></ion-icon></a><span class="screen-reader-only">Rss link (opens in a new window)</span></li> 
 		</ul>
 			<p>&copy; <span id="year"> </span> Soultravel</p>
 	</div>
